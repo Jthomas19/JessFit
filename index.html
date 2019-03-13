@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, inital-scale=1.0" >
+    
+    <!-- Project V4:Forms, Media, GitHub
+         Author: Jessica Thomas 
+         Assignment: Project V4
+         Date:   3/11/19
+
+         filename: index.html
+-->    
+     <link href="styles.css" rel="stylesheet" type="text/css"/>
+     <title>JessFit</title>
+  </head>
+   
+  <body>
+    <header>
+        <div class="title">Welcome to JessFit!</div>
+     <nav>
+         <ol>
+         <li><a href="index.html">HOME</a>
+         <li><a href="about.html">About Us</a>
+         <li><a href="#">Contact Us</a>
+         </li>
+      </ol>
+        </nav>
+      </header>
+    <img src="jessphoto.png" alt="" class="center"/>
+   <!--  M6LO3 Demonstrate how to create a table (HTML)-->
+   <!-- created a daily schedule table for exercises -->
+    <table class="DailySchedule">
+       <tr>
+          <th>Exercises</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th> 
+        </tr>
+        <tr>
+           <th> Push-ups</th>
+           <td>25</td>
+           <td>20</td>
+           <td>15</td>
+           <td>25</td>
+           <td>20</td>
+           <td>15</td>
+           <td>OFF DAY</td>
+       </tr>
+       <tr>
+          <th>Sit-ups</th>
+          <td>25</td>
+          <td>20</td>
+          <td>15</td>
+          <td>25</td>
+          <td>20</td>
+          <td>15</td>
+          <td>OFF DAY</td>      
+      </tr>
+      <tr>
+         <th>Leg-Lifts</th>
+         <td>25</td>
+         <td>20</td>
+         <td>15</td>
+         <td>25</td>
+         <td>20</td>
+         <td>15</td>
+         <td>OFF DAY</td>
+     </tr>
+     <tr>
+        <th>Planks</th>
+        <td>25 sec</td>
+        <td>20 sec</td>
+        <td>15 sec</td>
+        <td>25 sec</td>
+        <td>20 sec</td>
+        <td>15 sec</td>
+        <td>OFF DAY</td>
+    </tr>
+        <tr>
+            <!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)-->
+            <!--displays column span across 6 days with the same number for that exercise-->
+          <th>Jumping-Jacks</th>
+          <td colspan="6">25</td>
+          <td>OFF DAY</td>      
+      </tr>
+  </table>
+      
+      <!--M8LO9  Demonstrate the use of the iframe element (HTML) -->
+      <!-- I use iframe size and display my video on the page-->
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VHyGqsPOUHs"  ></iframe>
+      <!--M8LO8 Demonstrate the use of video in a Web page (HTML)-->
+      <!-- I display the same video on the page using video control-->
+      <p>Click to play</p>
+    <video controls>
+      <source src= "https://www.youtube.com/embed/VHyGqsPOUHs.mp4" type="video/mp4"/>
+      <source src= "https://www.youtube.com/embed/VHyGqsPOUHs.webm" type="video/webm"/>
+    </video>
+      <p><em> To play this video clip, your browser needs to support HTML5.</em></p>       
+   
+     
+  <footer> JessFit &#8226; Jessica Thomas</footer>
+
+ </body>
+</html>

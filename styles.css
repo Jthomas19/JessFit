@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+ 
+    /*   Project V4:Forms, Media, GitHub
+         Author: Jessica Thomas 
+         Assignment: Project V4
+         Date:   3/11/19
+*/
+
+html{ 
+    background-color: rgb(255, 19, 203);  
+
+}
+/*M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML)*/
+/*my title comes in with black color then change to white after 10s and my letters transition in as my page comes up*/
+.title{
+    color:rgb(255,255,255);
+    text-align: center;
+    font-size: 2.5em;
+    transition: color 1.5s ease-in 10s,
+                font-size 2s ease,
+                letter-spacing 2s ease-out;
+    
+}
+
+
+body p{
+    display:flex;
+    flex-flow:row wrap;
+    flex:1 1 auto;
+}
+/*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)*/
+/* this allows my nav order list  to move to the top of the page side by side also i did the same for my body which affects my About.html page*/
+
+nav ol{
+			display: 		flex;
+			flex-flow: 		row wrap;
+}
+/*M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)*/
+/*the nav list grow and shrink rate use on my About page*/
+nav li {
+            flex: 1 1 auto;
+}
+
+header, footer{
+    width:100%;
+}
+/*
+M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+*/
+/* the footer remain in the same place which was at the */
+footer{ 
+    order:100;
+}
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)*/
+/*Create for Mobile*/
+@media only screen and (max-width:480px){
+nav.horizontal a { 
+    font-size: 1.5em;
+    line-height: 2.2em;
+   
+}
+}  
+/*Table Formatting*/
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)!>*/
+/* the appears of my table change the background inside the  table to white with black borders, I collapse my borders so they dont look seperate and also I change the th, and td the cell borders to black*/
+table.DailySchedule {
+    background: white;
+    border: 10px outset rgb(55, 0, 55);
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width:100%;
+}
+
+table.DailySchedule th, table.DailySchedule td{
+    border:1px solid black;
+    
+}
+/*M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page)*/
+/* created a black box shadow around the video also I set the width to be 70% on the page not so big.*/
+video {
+    box-shadow: rgb(51, 51, 51) 8px 8px 15px;
+    display:block;
+    margin: 10px auto;
+    width:70%;
+}
+
+footer {
+   font-family: calibri;
+   font-size: 1.2em;
+   width: 100%;
+   text-align: center;
+   bottom:0;
+   height: 30px;
+   position: relative;
+   border-radius: 40px;
+}
